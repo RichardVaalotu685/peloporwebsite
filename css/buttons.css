@@ -1,0 +1,23 @@
+.btn-transparent{
+	background: transparent;
+	border: 1px solid #FFF;	
+	border-radius: 0;
+	color: #FFF;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus{
+	background: #FFF;
+	color: #000;
+}
+
+.btn-grey{
+	border-radius: 0;
+	padding: 3px 10px;
+}
+
+.btn-grey:hover{
+	background: #D30808;
+	color: #FFF;
+	border-color: #D30808;
+}

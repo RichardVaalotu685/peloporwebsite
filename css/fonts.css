@@ -1,0 +1,24 @@
+/*============== proxima =================*/
+
+@font-face {
+    font-family: 'proxima-bold';
+    src: url('../fonts/Proxima%20Nova%20Alt%20Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima-light';
+    src: url('../fonts/Proxima%20Nova%20Alt%20Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima-regular';
+    src: url('../fonts/Proxima%20Nova%20Alt%20Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

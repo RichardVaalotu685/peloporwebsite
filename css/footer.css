@@ -1,0 +1,138 @@
+footer{
+	background: #000;
+	min-height: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+footer .footer-logo img{
+	height: 150px;
+}
+
+footer .foot-title{
+	color: #FFF;
+	text-transform: uppercase;
+	margin-top: 0;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+}
+
+footer .foot-desc{
+	padding-top: 15px;
+	color: #babab6;
+	width: 70%;
+}
+
+ul.foot-links{
+	padding-top: 15px;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.foot-links li{
+	padding-bottom: 10px;	
+}
+
+ul.foot-links li a{
+	color: #babab6;
+}
+
+ul.foot-links li a:hover{
+	color: #FFF;
+}
+
+ul.socmed{
+	list-style: none;
+	padding: 0;
+  margin: 0;
+}
+
+ul.socmed li{
+  color: #FFF;
+	font-size: 10px;
+  margin-bottom: 10px;
+  max-height: 120px;
+}
+
+ul.socmed li::last-child{
+  margin-bottom: 0px;
+}
+
+ul.socmed li a{
+  color:#fff;letter-spacing:1px
+}
+
+ul.socmed li a img{
+  margin-right: 10px;
+}
+
+.bg-gallery,
+.bg-foto,
+.bg-bulletin{
+	height: 350px;
+	background-position: 0% 0px;
+	background-size: cover;
+	position: relative;
+	display: table;
+	width: 100%;
+	color: #FFF;
+	padding-left: 35px;
+}
+
+.bg-gallery{
+	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-2.jpg');
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	padding-top: 114px;
+}
+
+.bg-foto{
+	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-3.png');
+}
+
+.bg-bulletin{
+	background: url('../images/bg-1.jpg');
+}
+
+.slick-slide {
+	text-align: center !important;
+}
+
+.slick-slide::before {
+	content: '' !important;
+	display: inline-block !important;
+	height: 100% !important;
+	vertical-align: middle !important;
+}
+
+.slick-slide img {
+	vertical-align: middle !important;
+	display: inline-block !important;
+}
+
+.bg-content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bg-content__highlight{
+	font-family: "proxima-bold";
+	letter-spacing: 2px;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+@media (max-width:767px){
+	.bg-gallery{
+		padding-top: 100px;
+		padding-left: 35px;
+	}
+}
+
+@media (min-width: 1200px) {
+	footer .footer-logo{
+		width: 160px;
+	}
+}

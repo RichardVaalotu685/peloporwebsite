@@ -1,0 +1,140 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("news.css");
+@import url("typography.css");
+@import url("pagination.css");
+@import url("buttons.css");
+
+.showbox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5%;
+}
+
+.loader {
+	position: relative;
+	margin: 0 auto;
+	width: 100px;
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+}
+
+.circular {
+	animation: rotate 2s linear infinite;
+	height: 80px;
+	transform-origin: center center;
+	width: 80px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.path {
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+	stroke-linecap: round;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
+
+@keyframes color {
+	100%,
+	0% {
+		stroke: #d62d20;
+	}
+	40% {
+		stroke: #0057e7;
+	}
+	66% {
+		stroke: #008744;
+	}
+	80%,
+	90% {
+		stroke: #ffa700;
+	}
+}
+
+.tooltip-tail {
+    position:absolute;
+    top:0;
+    left:48vw;
+    width:0;
+    height:0;
+    border-color:#e5e8ed transparent transparent transparent;
+    border-width:15px;
+    border-style:solid;
+}
+
+.box-program{
+	background: #FFF;
+	height: 170px;
+	width: 95%;
+	display: table;
+	padding: 10px;
+}
+
+
+.box-program__content{
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid #d30808;
+	text-align: center;
+}
+
+.box-program__content h5{
+	font-family: "proxima-bold";
+	font-size: 20px;
+	color: #d30808;
+	text-transform: uppercase;
+	border-left: 4px solid #d30808;
+}
+
+.box-program:hover{
+	background: #d30808;
+	color: #FFF;
+}
+
+.box-program:hover .box-program__content{
+	border: 1px solid #FFF;
+}
+
+.box-program:hover .box-program__content h5{
+	color: #FFF;
+}
+
+@media (max-width:767px){
+
+	.box-program{
+		width: 100%;
+	}
+
+}

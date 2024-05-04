@@ -1,0 +1,33 @@
+.font-12{
+	font-size: 12px;
+}
+
+.text-upper{
+	text-transform: uppercase;
+}
+
+.text-bold{
+	font-family: "proxima-bold";
+}
+
+.text-grey{
+	color: #777777;
+}
+
+.text-base{
+	color: #1c1c1c;
+}
+
+a.text-base:hover,
+a.text-base:focus{
+	color: #da251d;
+}
+
+.text-red{
+	color: #d30808;
+}
+
+a.text-red:hover,
+a.text-red:focus{
+	color: #d30808;
+}
